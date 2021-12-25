@@ -51,6 +51,7 @@ export default class Action {
     if (element) {
       element.addEventListener('submit', function (event) {
         event.preventDefault();
+        self.saveAccount();
         const routes = new Routes(route.home);
         routes.render();
         self.mountAction(route.home);
@@ -86,6 +87,14 @@ export default class Action {
       document.querySelectorAll('.click-route')
     );
     return routesClick;
+  }
+
+  saveAccount() {
+    document.getElementById('modalTitle').innerText = 'Registrar';
+    document.getElementById('modalDescription').innerText =
+      'Cadastro realizado com sucesso. Faça o Login em sua conta!';
+    const myModal = new bootstrap.Modal(document.getElementById('myModal'), {});
+    myModal.show();
   }
 
   updateClick(main, page) {

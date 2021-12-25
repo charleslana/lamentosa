@@ -1,5 +1,6 @@
 import navBar from '../shared/nav-bar.js';
 import footer from '../shared/footer.js';
+import modal from '../shared/modal.js';
 
 const register = () => {
   return `
@@ -47,6 +48,7 @@ const register = () => {
       </form>
     </div>
     ${footer()}
+    ${modal()}
   `;
 };
 

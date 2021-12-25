@@ -185,3 +185,17 @@ a:hover {
   font-style: normal;
   vertical-align: middle;
 }
+
+.modal-content {
+  background-color: rgba(12, 12, 12, 0.92) !important;
+  border-radius: 0 !important;
+}
+
+.modal-header {
+  border-bottom: 0 !important;
+}
+
+.modal-footer {
+  background-color: rgba(12, 12, 12, 0.92) !important;
+  border-top: 0 !important;
+}

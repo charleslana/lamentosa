@@ -1,5 +1,6 @@
 import navBar from '../shared/nav-bar.js';
 import footer from '../shared/footer.js';
+import modal from '../shared/modal.js';
 
 const home = () => {
   return `
@@ -36,6 +37,7 @@ const home = () => {
       </div>
     </div>
     ${footer()}
+    ${modal()}
   `;
 };
 
