@@ -65,11 +65,11 @@ export default class Action {
       element.addEventListener('click', function (event) {
         event.preventDefault();
         const page = this.href.replace(/^.*\//g, '');
-        const routes = new Routes(page);
-        routes.render();
         const main = document.querySelector('main');
         const getAttributePage = main.getAttribute('page');
         if (page !== getAttributePage) {
+          const routes = new Routes(page);
+          routes.render();
           self.updateClick(main, page);
         }
       });

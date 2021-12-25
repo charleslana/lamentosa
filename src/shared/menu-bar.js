@@ -1,6 +1,6 @@
 const menuBar = () => {
   return `
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg top animate__animated animate__fadeIn">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -13,7 +13,7 @@ const menuBar = () => {
               </a>
               <ul class="dropdown-menu dropdown-menu-dark p-3 lh-lg" aria-labelledby="navbarDarkDropdownState">
                 <li><a class="dropdown-item click-route" href="/general">Meu personagem</a></li>
-                <li><a class="dropdown-item click-route" href="/home">Meu Grimório</a></li>
+                <li><a class="dropdown-item click-route" href="/my-grimoire">Meu Grimório</a></li>
                 <li><a class="dropdown-item" href="#">Minhas Sentinelas</a></li>
                 <li><a class="dropdown-item" href="#">Tarefas Diárias</a></li>
                 <li><a class="dropdown-item" href="#">Conquistas</a></li>
