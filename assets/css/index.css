@@ -1,0 +1,136 @@
+@import url('./media.css');
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-image: url('../images/layout/body_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: black;
+  background-size: 100% auto;
+  color: white;
+}
+
+.logo {
+  background-image: url('../images/layout/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vh;
+}
+
+.navbar-dark .navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+header > nav > div {
+  width: auto !important;
+}
+
+.nav-item > a {
+  font-size: 0.8rem;
+}
+
+.nav-item > a:hover {
+  border-bottom: 1px solid white;
+  color: #a0742f !important;
+}
+
+.btn-no-style {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.btn-no-style:hover {
+  color: #a0742f;
+  font-weight: 700;
+}
+
+.linear {
+  background: linear-gradient(rgba(30, 30, 30, 0.1), #1e1e1e);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: 'Cinzel', sans-serif;
+}
+
+.card {
+  background: rgba(26, 27, 30, 0.9) !important;
+  border: 1px solid black !important;
+  width: 18rem;
+}
+
+.btn {
+  border-top: 1px solid #4a5360 !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  background-color: #17181b !important;
+  box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 75%) !important;
+  border-radius: 0 !important;
+  padding: 0.475rem 1rem !important;
+}
+
+.btn:focus {
+  border-color: none !important;
+  box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 75%) !important;
+}
+
+.btn:hover {
+  color: #a0742f;
+  font-weight: 700;
+}
+
+.form-control,
+.form-select {
+  background-color: #1e1f22 !important;
+  border: 1px solid #353231 !important;
+  font-size: 0.8rem !important;
+  padding: 0.475rem 1rem;
+  color: white !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+  color: white !important;
+  border: 1px solid white !important;
+  box-shadow: none !important;
+}
+
+footer {
+  background-color: rgba(12, 12, 12, 0.8) !important;
+  font-size: 0.8rem !important;
+}
+
+a {
+  color: white;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #a0742f !important;
+  font-weight: 700;
+}
+
+.discord-icon {
+  background-image: url('../images/icons/discord.png');
+  background-size: 100% auto;
+  width: 45px;
+  height: 45px;
+}
+
+.bg {
+  background-color: rgba(12, 12, 12, 0.92) !important;
+}
