@@ -1,5 +1,6 @@
 import Page from '../pages/index.js';
 import { renderLanguage } from '../languages/index.js';
+import Action from './action.js';
 
 export default class Routes {
   route;
@@ -8,12 +9,18 @@ export default class Routes {
     this.route = route;
   }
 
+  mount() {
+    const action = new Action();
+    action.addEventClick();
+  }
+
   render() {
     window.scrollTo(0, 0);
     const page = new Page(this.route);
     document.querySelector('main').innerHTML = page.start();
-    renderLanguage();
     this.setHash(this.route);
+    this.mount();
+    renderLanguage();
   }
 
   setHash(route) {

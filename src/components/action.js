@@ -3,26 +3,12 @@ import route from './route.js';
 import Routes from './routes.js';
 
 export default class Action {
-  addRouteClick() {
-    const self = this;
-    this.routeSelectorAll().map(element => {
-      element.addEventListener('click', function (event) {
-        event.preventDefault();
-        const page = this.href.replace(/^.*\//g, '');
-        const main = document.querySelector('main');
-        const getAttributePage = main.getAttribute('page');
-        if (page !== getAttributePage) {
-          self.updateClick(main, page);
-        }
-      });
-    });
-  }
-
   addEventClick() {
     this.addRouteClick();
     this.addLanguageClick();
     this.addLoginClick();
     this.addRegisterClick();
+    this.addLogoutClick();
   }
 
   addLanguageClick() {
@@ -35,32 +21,64 @@ export default class Action {
   }
 
   addLoginClick() {
+    const self = this;
     const element = document.querySelector('main[page=home] form');
     if (element) {
       element.addEventListener('submit', function (event) {
         event.preventDefault();
         const routes = new Routes(route.general);
         routes.render();
-        this.addRouteClick();
+        self.mountAction(route.general);
+      });
+    }
+  }
+
+  addLogoutClick() {
+    const self = this;
+    const element = document.getElementById('logout');
+    if (element) {
+      element.addEventListener('click', function () {
+        const routes = new Routes(route.home);
+        routes.render();
+        self.mountAction(route.home);
       });
     }
   }
 
   addRegisterClick() {
+    const self = this;
     const element = document.querySelector('main[page=register] form');
     if (element) {
       element.addEventListener('submit', function (event) {
         event.preventDefault();
         const routes = new Routes(route.home);
         routes.render();
+        self.mountAction(route.home);
       });
     }
   }
 
-  removeRouteActiveClick() {
+  addRouteClick() {
+    console.log('chamou o route');
+    const self = this;
     this.routeSelectorAll().map(element => {
-      element.classList.remove('active');
+      element.addEventListener('click', function (event) {
+        event.preventDefault();
+        const page = this.href.replace(/^.*\//g, '');
+        const routes = new Routes(page);
+        routes.render();
+        const main = document.querySelector('main');
+        const getAttributePage = main.getAttribute('page');
+        if (page !== getAttributePage) {
+          self.updateClick(main, page);
+        }
+      });
     });
+  }
+
+  mountAction(page) {
+    const main = document.querySelector('main');
+    this.updateClick(main, page);
   }
 
   routeSelectorAll() {
@@ -74,11 +92,5 @@ export default class Action {
     main.setAttribute('page', page);
     const routes = new Routes(page);
     routes.render();
-    const element = document.getElementById(page);
-    if (element) {
-      this.removeRouteActiveClick();
-      element.classList.add('active');
-    }
-    this.addEventClick();
   }
 }
