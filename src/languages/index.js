@@ -4,7 +4,17 @@ import spanish from './spanish.js';
 
 export const getLanguage = () => {
   const getStorage = localStorage.getItem('language');
-  return getStorage === 'pt' || !getStorage
+  if (getStorage == null) {
+    const language = navigator.language;
+    let array = [];
+    array = language.split('-');
+    return array[0] === 'pt'
+      ? portuguese
+      : getStorage === 'es'
+      ? spanish
+      : english;
+  }
+  return getStorage === 'pt'
     ? portuguese
     : getStorage === 'es'
     ? spanish
