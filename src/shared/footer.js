@@ -1,4 +1,4 @@
-import { urlDiscord } from '../utils/config.js';
+import { urlDiscord, urlDeveloper } from '../utils/config.js';
 
 const footer = () => {
   return `
@@ -10,7 +10,7 @@ const footer = () => {
           <p class="d-inline mb-1"> © Lamentosa Privado por Charles Lana</p>
           <br/>
           <p class="d-inline">Todos os direitos reservados.</p>
-          <a href="#" class="d-inline">Visite a página do desenvolvedor.</a>
+          <a href="${urlDeveloper}" target="_blank" class="d-inline">Visite a página do desenvolvedor.</a>
         </div>
         <div class="col-md-3 col-12 mb-2 text-center">
           <a href="${urlDiscord}" target="_blank">

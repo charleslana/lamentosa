@@ -26,7 +26,7 @@ const register = () => {
         <div class="mb-3">
           <label for="gender" class="form-label">Gênero</label>
           <select class="form-select" aria-label="gender" id="gender" required>
-            <option selected disabled value="">Selecione uma gênero</option>
+            <option selected disabled value="">Selecione um gênero</option>
             <option value="1">Masculino</option>
             <option value="2">Feminino</option>
           </select>
@@ -40,7 +40,8 @@ const register = () => {
           <input type="password" class="form-control" id="confirmPassword" required>
         </div>
         <div class="mb-3">
-          <small>Ao criar meu personagem, afirmo que LI e CONCORDO com todos <a class="click-action" href="/rules">Termos de Serviço e Regras</a>.</small>
+          <small>Ao criar meu personagem, afirmo que LI e CONCORDO com todos</small>
+          <small> <a class="click-route" href="/rules">Termos de Serviço e Regras</a>.</small>
         </div>
         <button type="submit" class="btn btn-primary">Transformar</button>
       </form>

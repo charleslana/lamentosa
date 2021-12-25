@@ -12,14 +12,6 @@ const home = () => {
         <div class="col d-flex justify-content-center mb-5 animate__animated animate__fadeInLeft">
           <div class="card bg-dark text-white">
             <div class="card-body text-center">
-              <h5 class="card-title text-start mb-4">Registre-se</h5>
-              <a class="btn btn-primary click-route" href="/register" role="button">Registre-se</a>
-            </div>
-          </div>
-        </div>
-        <div class="col d-flex justify-content-center mb-5 animate__animated animate__fadeInRight">
-          <div class="card bg-dark text-white">
-            <div class="card-body text-center">
               <h5 class="card-title text-start mb-4">Entrar</h5>
               <form>
                 <div class="mb-3">
@@ -30,6 +22,14 @@ const home = () => {
                 </div>
                 <button type="submit" class="btn btn-primary">Entrar</button>
               </form>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-5 animate__animated animate__fadeInRight">
+          <div class="card bg-dark text-white">
+            <div class="card-body text-center">
+              <h5 class="card-title text-start mb-4">Registre-se</h5>
+              <a class="btn btn-primary click-route" href="/register" role="button">Registre-se</a>
             </div>
           </div>
         </div>

@@ -21,10 +21,6 @@ export const changeLanguage = event => {
 
 export const renderLanguage = () => {
   let element;
-  element = document.querySelector('main[page=home] h1.text-center');
-  if (element != null) {
-    element.innerHTML = getLanguage().homeTitle;
-  }
   element = document.querySelectorAll('a.nav-link.click-route')[0];
   if (element != null) {
     element.innerHTML = getLanguage().navBarLogin;
@@ -53,27 +49,13 @@ export const renderLanguage = () => {
   if (element != null) {
     element.innerHTML = getLanguage().footerBackToTop;
   }
+  element = document.querySelector('main[page=home] h1.text-center');
+  if (element != null) {
+    element.innerHTML = getLanguage().homeTitle;
+  }
   element = document.querySelectorAll(
     'main[page=home] h5.card-title.text-start.mb-4'
   )[0];
-  if (element != null) {
-    element.innerHTML = getLanguage().homeRegister;
-  }
-  element = document.querySelector(
-    'main[page=home] a.btn.btn-primary.click-route'
-  );
-  if (element != null) {
-    element.innerHTML = getLanguage().homeRegister;
-  }
-  element = document.querySelector(
-    'main[page=home] a.btn.btn-primary.click-route'
-  );
-  if (element != null) {
-    element.innerHTML = getLanguage().homeRegister;
-  }
-  element = document.querySelectorAll(
-    'main[page=home] h5.card-title.text-start.mb-4'
-  )[1];
   if (element != null) {
     element.innerHTML = getLanguage().homeLogin;
   }
@@ -81,12 +63,116 @@ export const renderLanguage = () => {
   if (element != null) {
     element.innerHTML = getLanguage().homeLogin;
   }
-  element = document.getElementById('email');
+  element = document.querySelector('main[page=home] #email');
   if (element != null) {
     element.placeholder = getLanguage().homeLoginEmail;
   }
-  element = document.getElementById('password');
+  element = document.querySelector('main[page=home] #password');
   if (element != null) {
     element.placeholder = getLanguage().homeLoginPassword;
+  }
+  element = document.querySelectorAll(
+    'main[page=home] h5.card-title.text-start.mb-4'
+  )[1];
+  if (element != null) {
+    element.innerHTML = getLanguage().homeRegister;
+  }
+  element = document.querySelector(
+    'main[page=home] a.btn.btn-primary.click-route'
+  );
+  if (element != null) {
+    element.innerHTML = getLanguage().homeRegister;
+  }
+  element = document.querySelector(
+    'main[page=home] a.btn.btn-primary.click-route'
+  );
+  if (element != null) {
+    element.innerHTML = getLanguage().homeRegister;
+  }
+  element = document.querySelector('main[page=register] h1.text-center.mb-5');
+  if (element != null) {
+    element.innerHTML = getLanguage().registerTitle;
+  }
+  element = document.querySelectorAll(
+    'main[page=register] label.form-label'
+  )[0];
+  if (element != null) {
+    element.innerHTML = getLanguage().registerEmail;
+  }
+  element = document.querySelectorAll(
+    'main[page=register] label.form-label'
+  )[1];
+  if (element != null) {
+    element.innerHTML = getLanguage().registerName;
+  }
+  element = document.querySelectorAll(
+    'main[page=register] label.form-label'
+  )[2];
+  if (element != null) {
+    element.innerHTML = getLanguage().registerBreed;
+  }
+  element = document.querySelector('main[page=register] #breed');
+  if (element != null) {
+    element.options[0].innerHTML = getLanguage().registerSelectBreed;
+  }
+  element = document.querySelector('main[page=register] #breed');
+  if (element != null) {
+    element.options[1].innerHTML = getLanguage().registerSelectBreedVampire;
+  }
+  element = document.querySelector('main[page=register] #breed');
+  if (element != null) {
+    element.options[2].innerHTML = getLanguage().registerSelectBreedWerewolf;
+  }
+  element = document.querySelectorAll(
+    'main[page=register] label.form-label'
+  )[3];
+  if (element != null) {
+    element.innerHTML = getLanguage().registerGender;
+  }
+  element = document.querySelector('main[page=register] #gender');
+  if (element != null) {
+    element.options[0].innerHTML = getLanguage().registerSelectGender;
+  }
+  element = document.querySelector('main[page=register] #gender');
+  if (element != null) {
+    element.options[1].innerHTML = getLanguage().registerSelectGenderMasculine;
+  }
+  element = document.querySelector('main[page=register] #gender');
+  if (element != null) {
+    element.options[2].innerHTML = getLanguage().registerSelectGenderFeminine;
+  }
+  element = document.querySelectorAll(
+    'main[page=register] label.form-label'
+  )[4];
+  if (element != null) {
+    element.innerHTML = getLanguage().registerPassword;
+  }
+  element = document.querySelectorAll(
+    'main[page=register] label.form-label'
+  )[5];
+  if (element != null) {
+    element.innerHTML = getLanguage().registerConfirmPassword;
+  }
+  element = document.querySelectorAll('main[page=register] small')[0];
+  if (element != null) {
+    element.innerHTML = getLanguage().registerRulesDescription;
+  }
+  element = document.querySelector('main[page=register] small a.click-route');
+  if (element != null) {
+    element.innerHTML = getLanguage().registerRulesLink;
+  }
+  element = document.querySelector(
+    'main[page=register] button.btn.btn-primary'
+  );
+  if (element != null) {
+    element.innerHTML = getLanguage().registerTransform;
+  }
+  element = document.getElementById('titleNotFound');
+  if (element != null) {
+    element.innerHTML = getLanguage().notFoundTitle;
+  }
+  element = document.getElementById('btnNotFound');
+  if (element != null) {
+    element.innerHTML = getLanguage().notFoundButton;
   }
 };
