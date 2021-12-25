@@ -1,4 +1,5 @@
 import { changeLanguage } from '../languages/index.js';
+import route from './route.js';
 import Routes from './routes.js';
 
 export default class Action {
@@ -20,6 +21,8 @@ export default class Action {
   addEventClick() {
     this.addRouteClick();
     this.addLanguageClick();
+    this.addLoginClick();
+    this.addRegisterClick();
   }
 
   addLanguageClick() {
@@ -29,6 +32,29 @@ export default class Action {
     languagesClick.map(element => {
       element.addEventListener('click', changeLanguage);
     });
+  }
+
+  addLoginClick() {
+    const element = document.querySelector('main[page=home] form');
+    if (element) {
+      element.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const routes = new Routes(route.general);
+        routes.render();
+        this.addRouteClick();
+      });
+    }
+  }
+
+  addRegisterClick() {
+    const element = document.querySelector('main[page=register] form');
+    if (element) {
+      element.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const routes = new Routes(route.home);
+        routes.render();
+      });
+    }
   }
 
   removeRouteActiveClick() {

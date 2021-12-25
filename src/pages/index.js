@@ -1,6 +1,8 @@
 import notFound from '../pages/not-found.js';
 import home from '../pages/home.js';
 import register from '../pages/register.js';
+import general from '../pages/general.js';
+import route from '../components/route.js';
 
 export default class Page {
   page;
@@ -11,10 +13,12 @@ export default class Page {
 
   start() {
     switch (this.page) {
-      case 'home':
+      case route.home:
         return home();
-      case 'register':
+      case route.register:
         return register();
+      case route.general:
+        return general();
       default:
         return notFound();
     }
