@@ -40,11 +40,11 @@ export const changeLanguage = event => {
 
 export const renderLanguage = () => {
   let element;
-  element = document.querySelectorAll('a.nav-link.click-route')[0];
+  element = document.querySelectorAll('header a.nav-link.click-route')[0];
   if (element) {
     element.innerHTML = getLanguage().navBarLogin;
   }
-  element = document.querySelectorAll('a.nav-link.click-route')[1];
+  element = document.querySelectorAll('header a.nav-link.click-route')[1];
   if (element) {
     element.innerHTML = getLanguage().navBarRegister;
   }
