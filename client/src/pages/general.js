@@ -1,6 +1,7 @@
 import footer from '../shared/footer.js';
 import headerBar from '../shared/header-bar.js';
 import menuBar from '../shared/menu-bar.js';
+import modalLarge from '../shared/modal-large.js';
 
 const general = () => {
   return `
@@ -22,6 +23,7 @@ const general = () => {
       </div>
     </div>
     ${footer()}
+    ${modalLarge()}
   `;
 };
 

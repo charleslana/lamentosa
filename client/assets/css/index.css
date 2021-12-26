@@ -10,7 +10,7 @@ body {
   background-position: top center;
   background-color: black;
   background-size: 100% auto;
-  color: white;
+  color: #f6f6f6;
 }
 
 .logo {
@@ -115,6 +115,7 @@ h6 {
   font-size: 0.8rem !important;
   padding: 0.475rem 1rem;
   color: white !important;
+  border-radius: 0 !important;
 }
 
 .form-control:focus,
@@ -190,8 +191,12 @@ a:hover {
   vertical-align: middle;
 }
 
+.modal-dialog {
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 50%);
+}
+
 .modal-content {
-  background-color: rgba(12, 12, 12, 0.92) !important;
+  background-color: #191a1d !important;
   border-radius: 0 !important;
 }
 
@@ -199,8 +204,19 @@ a:hover {
   border-bottom: 0 !important;
 }
 
+.btn-close {
+  color: white !important;
+  background: transparent
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")
+    center/1em auto no-repeat;
+}
+
+.btn-close:focus {
+  box-shadow: none !important;
+}
+
 .modal-footer {
-  background-color: rgba(12, 12, 12, 0.92) !important;
+  background-color: #191a1d !important;
   border-top: 0 !important;
 }
 
@@ -235,4 +251,24 @@ a:hover {
 .h2-decorative {
   font-family: 'Cinzel Decorative', cursive !important;
   font-size: 1.5rem !important;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1090;
+  top: 0%;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none !important;
+}
+
+.alert-danger {
+  padding: 10px;
+  font-size: 14px;
+  background-color: #590e00 !important;
+  border-radius: 0 !important;
+  color: #f6f6f6 !important;
+  border: 0 !important;
 }
