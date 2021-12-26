@@ -14,8 +14,10 @@ const footer = () => {
         </div>
         <div class="col-md-3 col-12 mb-2 text-center">
           <a href="${urlDiscord}" target="_blank">
-            <p>Acesse o nosso Discord!</p>
-            <div class="discord-icon mx-auto"></div>
+            <div>
+              <p>Acesse o nosso Discord!</p>
+              <i class="fa-brands fa-discord h1"></i>
+            </div>
           </a>
         </div>
         <div class="col-md-3 col-12 mb-2 text-center">

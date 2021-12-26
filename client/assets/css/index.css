@@ -139,13 +139,6 @@ a:hover {
   font-weight: 700;
 }
 
-.discord-icon {
-  background-image: url('../images/icons/discord.png');
-  background-size: 100% auto;
-  width: 45px;
-  height: 45px;
-}
-
 .bg {
   background-color: rgba(12, 12, 12, 0.92) !important;
 }
@@ -237,4 +230,9 @@ a:hover {
   font-family: 'Cinzel Decorative', cursive !important;
   font-size: 2rem !important;
   font-weight: 700;
+}
+
+.h2-decorative {
+  font-family: 'Cinzel Decorative', cursive !important;
+  font-size: 1.5rem !important;
 }
