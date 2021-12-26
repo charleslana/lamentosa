@@ -1,4 +1,4 @@
-import { changeLanguage } from '../languages/index.js';
+import { changeLanguage, renderLanguage } from '../languages/index.js';
 import route from './route.js';
 import Routes from './routes.js';
 
@@ -9,9 +9,11 @@ export default class Action {
     this.addLoginClick();
     this.addRegisterClick();
     this.addLogoutClick();
+    this.listenerModal();
   }
 
   addLanguageClick() {
+    renderLanguage();
     const languagesClick = [].slice.call(
       document.querySelectorAll('.click-language')
     );
@@ -28,7 +30,6 @@ export default class Action {
         event.preventDefault();
         const routes = new Routes(route.general);
         routes.render();
-        self.mountAction(route.general);
       });
     }
   }
@@ -40,7 +41,6 @@ export default class Action {
       element.addEventListener('click', function () {
         const routes = new Routes(route.home);
         routes.render();
-        self.mountAction(route.home);
       });
     }
   }
@@ -54,7 +54,6 @@ export default class Action {
         self.saveAccount();
         const routes = new Routes(route.home);
         routes.render();
-        self.mountAction(route.home);
       });
     }
   }
@@ -77,9 +76,13 @@ export default class Action {
     });
   }
 
-  mountAction(page) {
-    const main = document.querySelector('main');
-    this.updateClick(main, page);
+  listenerModal() {
+    const element = document.getElementById('myModal');
+    if (element) {
+      element.addEventListener('hidden.bs.modal', function () {
+        element.remove();
+      });
+    }
   }
 
   routeSelectorAll() {

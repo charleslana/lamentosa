@@ -1,5 +1,4 @@
 import Page from '../pages/index.js';
-import { renderLanguage } from '../languages/index.js';
 import Action from './action.js';
 
 export default class Routes {
@@ -20,7 +19,6 @@ export default class Routes {
     document.querySelector('main').innerHTML = page.start();
     this.setHash(this.route);
     this.mount();
-    renderLanguage();
   }
 
   setHash(route) {

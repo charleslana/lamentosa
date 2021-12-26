@@ -29,7 +29,9 @@ body {
 }
 
 .navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  background-image: url('../images/icons/menu.png') !important;
+  width: 24px;
+  height: 24px;
 }
 
 header > nav > div {
@@ -198,4 +200,16 @@ a:hover {
 .modal-footer {
   background-color: rgba(12, 12, 12, 0.92) !important;
   border-top: 0 !important;
+}
+
+.hunt-icon {
+  background-image: url('../images/icons/hunt.png');
+  width: 32px;
+  height: 32px;
+}
+
+.battle-icon {
+  background-image: url('../images/icons/battle.png');
+  width: 32px;
+  height: 32px;
 }

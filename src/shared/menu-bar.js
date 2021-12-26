@@ -1,11 +1,14 @@
 const menuBar = () => {
   return `
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg top animate__animated animate__fadeIn">
-      <div class="container-fluid">
+      <div class="container-fluid justify-content-around">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse px-5 justify-content-center" id="navbarNavDarkDropdown">
+        <a class="nav-link text-uppercase text-white d-lg-none route-click" href="#"><i class="messenger animate__animated animate__infinite infinite animate__flash">1</i></a>
+        <a class="d-lg-none route-click" href="/hunt"><div class="hunt-icon"></div></a>
+        <a class="d-lg-none route-click" href="/battle"><div class="battle-icon"></div></a>
+        <div class="collapse navbar-collapse px-5 justify-content-around" id="navbarNavDarkDropdown">
           <ul class="navbar-nav">
             <li class="nav-item dropdown pe-4">
               <a class="nav-link dropdown-toggle fs-6 fw-bold text-uppercase text-white" href="#" id="navbarDarkDropdownState" role="button" data-bs-toggle="dropdown" aria-expanded="false">
