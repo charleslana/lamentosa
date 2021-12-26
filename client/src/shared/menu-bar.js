@@ -5,9 +5,9 @@ const menuBar = () => {
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="nav-link text-uppercase text-white d-lg-none route-click" href="#"><i class="messenger animate__animated animate__infinite infinite animate__flash">1</i></a>
-        <a class="d-lg-none route-click" href="/hunt"><div class="hunt-icon"></div></a>
-        <a class="d-lg-none route-click" href="/battle"><div class="battle-icon"></div></a>
+        <a class="nav-link text-uppercase text-white d-lg-none click-route" href="#"><i class="messenger animate__animated animate__infinite infinite animate__flash">1</i></a>
+        <a class="d-lg-none click-route" href="/hunt"><div class="hunt-icon"></div></a>
+        <a class="d-lg-none click-route" href="/battle"><div class="battle-icon"></div></a>
         <div class="collapse navbar-collapse px-5 justify-content-around" id="navbarNavDarkDropdown">
           <ul class="navbar-nav">
             <li class="nav-item dropdown pe-4">
