@@ -2,7 +2,7 @@ import notFound from '../pages/not-found.js';
 import home from '../pages/home.js';
 import register from '../pages/register.js';
 import general from '../pages/general.js';
-import route from '../components/route.js';
+import route from '../routes/route.js';
 
 export default class Page {
   page;

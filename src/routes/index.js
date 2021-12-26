@@ -1,5 +1,5 @@
 import Page from '../pages/index.js';
-import Action from './action.js';
+import Action from '../actions/index.js';
 
 export default class Routes {
   route;

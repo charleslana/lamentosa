@@ -1,13 +1,13 @@
-import Action from './components/action.js';
+import { updateClick } from './actions/route-action.js';
+import route from './routes/route.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  let pageDefault = 'home';
+  let pageDefault = route.home;
   const hash = window.location.hash.substring(2);
   if (!!hash) {
     pageDefault = hash;
   }
-  const action = new Action();
-  action.updateClick(document.querySelector('main'), pageDefault);
+  updateClick(document.querySelector('main'), pageDefault);
 });
 
 window.addEventListener('popstate', function (event) {
@@ -16,7 +16,6 @@ window.addEventListener('popstate', function (event) {
   const getAttributePage = main.getAttribute('page');
   if (page !== getAttributePage) {
     console.log('popstate diferente');
-    const action = new Action();
-    action.updateClick(main, page);
+    updateClick(main, page);
   }
 });

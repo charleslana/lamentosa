@@ -2,6 +2,15 @@ import portuguese from './portuguese.js';
 import english from './english.js';
 import spanish from './spanish.js';
 
+export const addLanguageClick = () => {
+  const languagesClick = [].slice.call(
+    document.querySelectorAll('.click-language')
+  );
+  languagesClick.map(element => {
+    element.addEventListener('click', changeLanguage);
+  });
+};
+
 export const getLanguage = () => {
   const getStorage = localStorage.getItem('language');
   if (getStorage == null) {
