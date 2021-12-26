@@ -20,6 +20,11 @@ body {
   height: 40vh;
 }
 
+hr {
+  opacity: 1 !important;
+  color: #3f4044 !important;
+}
+
 .navbar-dark .navbar-toggler {
   border: none !important;
 }
@@ -60,6 +65,10 @@ header > nav > div {
 
 .linear {
   background: linear-gradient(rgba(30, 30, 30, 0.1), #1e1e1e);
+}
+
+.linear > hr {
+  color: #747781 !important;
 }
 
 h1,
@@ -212,4 +221,20 @@ a:hover {
   background-image: url('../images/icons/battle.png');
   width: 32px;
   height: 32px;
+}
+
+.alert-dark {
+  background: rgba(32, 32, 32, 0.92) !important;
+  color: white;
+  text-align: center;
+  border-radius: 0 !important;
+  border: none !important;
+  font-size: 0.85rem;
+  position: unset !important;
+}
+
+.h1-decorative {
+  font-family: 'Cinzel Decorative', cursive !important;
+  font-size: 2rem !important;
+  font-weight: 700;
 }
