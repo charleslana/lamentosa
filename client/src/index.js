@@ -19,7 +19,3 @@ window.addEventListener('popstate', function (event) {
     updateClick(main, page);
   }
 });
-
-window.addEventListener('resize', function (event) {
-  window.location.reload();
-});
