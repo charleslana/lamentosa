@@ -4,7 +4,7 @@ import addLogoutClick from './logout-action.js';
 import addRegisterClick from './register-action.js';
 import { addRouteClick } from './route-action.js';
 import { showDialogMarry } from './general-action.js';
-import { initSwiper } from '../utils/index.js';
+import initSwiper from './swiper-action.js';
 
 export default class Action {
   addEventClick() {
