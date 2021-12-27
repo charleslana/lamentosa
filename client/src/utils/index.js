@@ -47,13 +47,4 @@ const showSwiper = (
       prevEl: '.swiper-button-prev',
     },
   });
-  window.addEventListener('resize', function (event) {
-    swiper.destroy(true, true);
-    const width = document.documentElement.clientWidth;
-    if (width < 576) {
-      initSwiper('horizontal', 50, 3);
-      return;
-    }
-    initSwiper();
-  });
 };

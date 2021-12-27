@@ -21,6 +21,8 @@ const listenerModal = () => {
   const myModal = document.getElementById('myModal');
   myModal.addEventListener('hidden.bs.modal', function () {
     bootstrap.Modal.getOrCreateInstance(myModal).dispose();
+    document.getElementById('modalTitle').innerText = '';
+    document.getElementById('modalDescription').innerText = '';
   });
 };
 
@@ -28,5 +30,7 @@ const listenerLargeModal = () => {
   const myModal = document.getElementById('myModalLarge');
   myModal.addEventListener('hidden.bs.modal', function () {
     bootstrap.Modal.getOrCreateInstance(myModal).dispose();
+    document.getElementById('modalLargeTitle').innerText = '';
+    document.getElementById('modalLargeDescription').innerText = '';
   });
 };
