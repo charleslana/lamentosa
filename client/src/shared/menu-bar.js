@@ -1,6 +1,6 @@
 const menuBar = () => {
   return `
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg top animate__animated animate__fadeIn">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark bg top animate__animated animate__fadeIn">
       <div class="container-fluid justify-content-around">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

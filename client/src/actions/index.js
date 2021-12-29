@@ -5,6 +5,7 @@ import addRegisterClick from './register-action.js';
 import { addRouteClick } from './route-action.js';
 import { showDialogMarry } from './general-action.js';
 import initSwiper from './swiper-action.js';
+import initTooltip from './tooltip-action.js';
 
 export default class Action {
   addEventClick() {
@@ -16,5 +17,6 @@ export default class Action {
     addLogoutClick();
     showDialogMarry();
     initSwiper();
+    initTooltip();
   }
 }

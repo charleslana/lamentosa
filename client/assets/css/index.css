@@ -95,7 +95,7 @@ h6 {
   background-color: #17181b !important;
   box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 75%) !important;
   border-radius: 0 !important;
-  padding: 0.475rem 1rem !important;
+  padding: 0.475rem 1.2rem !important;
 }
 
 .btn:focus {
@@ -406,4 +406,104 @@ a:hover {
 .swiper-button-prev,
 .swiper-button-next {
   color: white !important;
+}
+
+.progress {
+  background-color: #1d1e21;
+  border: 1px solid #242529;
+  height: 25px;
+  font-size: 1.2rem;
+}
+
+.bg-blue {
+  background-image: url('../images/bars/blue-bar.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent !important;
+}
+
+.bg-red {
+  background-image: url('../images/bars/red-bar.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent !important;
+  background-position: center;
+}
+
+.bg-orange {
+  background-image: url('../images/bars/orange-bar.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent !important;
+}
+
+.icon-status {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.icon-gold::before {
+  content: url('../images/icons/icon-gold.png');
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 16px;
+  color: #e59e23;
+  margin-right: 4px;
+}
+
+.icon-power::before {
+  content: url('../images/icons/icon-power.png');
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 33px;
+  margin-right: 4px;
+}
+
+.icon-combat::before {
+  content: url('../images/icons/icon-combat.png');
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 28px;
+  margin-right: 4px;
+}
+
+.icon-grimoire::before {
+  content: url('../images/icons/icon-grimoire.png');
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 26px;
+  margin-right: 4px;
+}
+
+.vertical-divider {
+  border-left: 1px solid #3f4044;
+}
+
+.tooltip-arrow::before {
+  border-style: none !important;
+}
+
+.tooltip-inner {
+  background: #191a1d;
+  border: 1px solid #4a4a4a;
+  font-size: 12px;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 !important;
+}
+
+.cursor-help {
+  cursor: help;
+}
+
+.tooltip.show {
+  opacity: 1 !important;
+}
+
+.bg-2 {
+  background: rgba(32, 32, 32, 0.92);
+}
+
+.table-dark {
+  --bs-table-bg: transparent !important;
 }
