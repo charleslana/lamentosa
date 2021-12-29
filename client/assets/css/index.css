@@ -448,7 +448,6 @@ a:hover {
   background-repeat: no-repeat;
   width: 21px;
   height: 16px;
-  color: #e59e23;
   margin-right: 4px;
 }
 
@@ -506,4 +505,20 @@ a:hover {
 
 .table-dark {
   --bs-table-bg: transparent !important;
+}
+
+.table-striped {
+  --bs-table-striped-bg: rgba(255, 255, 255, 0.1) !important;
+}
+
+.l-h-0 {
+  line-height: 0 !important;
+}
+
+.text-gold {
+  color: #e59e23;
+}
+
+.text-discount {
+  color: #bc9d59;
 }

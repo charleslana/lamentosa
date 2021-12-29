@@ -69,7 +69,7 @@ const general = () => {
             </div>
             <div class="row">
               <div class="col-3 col-sm-2 offset-sm-2 cursor-help" data-bs-toggle="tooltip" title="Seu Ouro">
-                <div class="icon-gold icon-status">3.000</div>
+                <div class="icon-gold icon-status text-gold">3.000</div>
               </div>
               <div class="col-3 col-sm-2 vertical-divider cursor-help" data-bs-toggle="tooltip" title="Poder de Luta: Baseado em suas habilidades desconsiderando equipamentos.">
                 <div class="icon-power icon-status">12</div>
@@ -126,7 +126,7 @@ const general = () => {
                 <small class="justify-content-center d-flex position-absolute w-100">5</small>
               </div>
             </div>
-            <button class="btn-no-style"><h1 class="h1-decorative mt-2 pt-2">Treinar</h1></button>
+            <button class="btn-no-style" id="btn-train"><h1 class="h1-decorative mt-2 pt-2">Treinar</h1></button>
           </div>
         </div>
       </div>
@@ -157,16 +157,16 @@ const general = () => {
             </thead>
             <tbody>
               <tr>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
+                <td class="py-3">0</td>
+                <td class="py-3">0</td>
+                <td class="py-3">0</td>
+                <td class="py-3">0</td>
+                <td class="py-3">0</td>
+                <td class="py-3">0</td>
+                <td class="py-3">0</td>
+                <td class="py-3">0</td>
+                <td class="py-3">0</td>
+                <td class="py-3">0</td>
               </tr>
               <tr>
                 <td>10.000º Ranking</td>

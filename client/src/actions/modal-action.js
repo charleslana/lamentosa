@@ -1,17 +1,20 @@
-export const modalAlert = (title, description) => {
-  document.getElementById('modalTitle').innerText = title;
+export const modalAlert = (title, description, options = {}) => {
+  document.getElementById('modalTitle').innerHTML = title;
   document.getElementById('modalDescription').innerHTML = description;
-  const myModal = new bootstrap.Modal(document.getElementById('myModal'), {});
+  const myModal = new bootstrap.Modal(
+    document.getElementById('myModal'),
+    options
+  );
   myModal.show();
   listenerModal();
 };
 
-export const modalLargeAlert = (title, description) => {
-  document.getElementById('modalLargeTitle').innerText = title;
+export const modalLargeAlert = (title, description, options = {}) => {
+  document.getElementById('modalLargeTitle').innerHTML = title;
   document.getElementById('modalLargeDescription').innerHTML = description;
   const myModal = new bootstrap.Modal(
     document.getElementById('myModalLarge'),
-    {}
+    options
   );
   myModal.show();
   listenerLargeModal();
