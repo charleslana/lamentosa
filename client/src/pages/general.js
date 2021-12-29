@@ -126,7 +126,7 @@ const general = () => {
                 <small class="justify-content-center d-flex position-absolute w-100">5</small>
               </div>
             </div>
-            <h1 class="h1-decorative mt-4 pt-3">Treinar</h1>
+            <button class="btn-no-style"><h1 class="h1-decorative mt-2 pt-2">Treinar</h1></button>
           </div>
         </div>
       </div>
